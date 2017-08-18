@@ -225,5 +225,5 @@ HistVal = dbSendQuery(con, "DELETE FROM \"tbl_accounting_historical\"
 
 
 #add the most recent current directory to historical
-HistAdd = dbSendQuery(con, "INSERT INTO \"tbl_accounting_current\" SELECT * FROM \"peter_test\"")
+HistAdd = dbSendQuery(con, "INSERT INTO \"tbl_accounting_historical\" SELECT * FROM \"tbl_accounting_current\"")
 ######################################################
